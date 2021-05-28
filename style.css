@@ -1,0 +1,46 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: hsl(0, 0%, 93%);
+  color: white;
+}
+.attribution {
+  position:fixed;
+  bottom: 5%;
+  right: 5%;
+  color: rgb(44, 44, 44);
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background:rgba(10, 12, 28, 1);
+}
+
+.card{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+}
+span:first-of-type{
+  color:#AB5CDB;
+}
+.a{
+  background: rgb(61, 47, 61);
+}
+.b{
+  background: rgb(236, 141, 141);
+}
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+}
