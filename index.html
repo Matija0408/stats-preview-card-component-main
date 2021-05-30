@@ -7,44 +7,38 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
+  <title>Card component</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="box a">
-        <h1>Get <span>insights</span> that help<br>
-          your business <span>grow</span>.</h1>
-        <p>Discover the benefits of data analytics and make<br>
-          better decisions regarding revenue, customer<br>
-          experience, and overall efficiency.
-        </p>
-        <div class="flexbox">
-          <div>
-            <h3>10k+<br>
-              <h6>COMPANIES</h6>
-            </h3>
-          </div>
-          <div>
-            <h3>314<br>
-              <h6>TEMPLATES</h6>
-            </h3>
-          </div>
-          <div>
-            <h3>12M+<br>
-              <h6>QUERIES</h6>
-            </h3>
-          </div>
+  <section class="wrapper">
+    <div class="description text-box">
+      <h1>Get <span class="font-color">insights</span> that help your business grow.</h1>
+      <p class="description-paragraph">Discover the benefits of data analytics and make better
+        decisions regarding revenue, customer experience and overall efficiency.
+      </p>
+      <div class="stats">
+        <div class="individual-stat">
+          <h4>10k+</h4>
+          <p class="stat-paragraph">COMPANIES</p>
+        </div>
+        <div class="individual-stat">
+          <h4>314</h4>
+          <p class="stat-paragraph">TEMPLATES</p>
+        </div>
+        <div class="individual-stat">
+          <h4>12M+</h4>
+          <p class="stat-paragraph">QUERIES</p>
         </div>
       </div>
-      <div class="box b"></div>
     </div>
-  </div>
+    <div class="picture image-box">
+      <img src="images/image-header-desktop.jpg" alt="">
+    </div>
+  </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Matija</a>.
