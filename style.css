@@ -23,6 +23,7 @@ body{
 }
 .wrapper{
   position: absolute;
+  width: 60%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -34,7 +35,7 @@ body{
 }
 
 img{
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -54,13 +55,14 @@ img{
 }
 
 .description > h1 {
+  max-width: 100%;
   font-weight: 400;
   margin-top: 6vh;
 }
 
 .description-paragraph{
   font-weight: 200;
-  font-size: 1.6vh;
+  font-size: 1.9vh;
   line-height: 1.7em;
   margin-top: 3vh;
   margin-bottom: 1vh;
@@ -71,8 +73,8 @@ h4{
 }
 
 .individual-stat{
-  margin-right: 4vh;
-  margin-top: 5vh;
+  margin-right: 9vh;
+  margin-top: 8vh;
 }
 
 .stat-paragraph {
@@ -83,26 +85,31 @@ h4{
 }
 
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 1025px){
   .wrapper{
-    /* width: 100%; */
-    /* position:static !important; */
+    width: 100%;
     grid-template-columns: 100%;
     grid-template-areas: "image-box" "text-box";
+    text-align: center;
+    margin-top: 7em;
   }
-  /* .stats{
+  .stats{
     display: flex;
     flex-flow: column;
-    align-items: center;
+    justify-content: center;
     text-align: center;
-  } */
+  }
   .description-paragraph{
     font-size: 2.2vh;
   }
-  /* .attribution{
-    position:initial;
-    bottom: 5%;
-    right: 5%;
-    color: white;
-  } */
+  .attribution{
+    display: none;
+  }
+  .individual-stat{
+   margin-top: 8vh;
+   margin-right: 0vh;
+  }
+  h4{
+    font-size: 3vh;
+  }
 }
